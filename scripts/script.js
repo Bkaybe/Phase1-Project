@@ -1,4 +1,4 @@
-const apiUrl = "http://localhost:3000/products";
+const apiUrl = "https://snap-store-backend.vercel.app/products";
 
 // Fetch the products on page load
 document.addEventListener("DOMContentLoaded", getProducts());
