@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 #landing {
   background-image: linear-gradient(45deg, transparent, rgba(33, 56, 10, 0.712)),
     url(/images/landing_image.png);
@@ -134,3 +135,5 @@ button.more-info:hover {
   background-color: black;
   color: #ffffff;
 }
+
+
