@@ -137,81 +137,101 @@ button.more-info:hover {
 }
 
 /* Product section */
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-#about {
+#products-section h2 {
+  text-align: center;
+  font-size: 30px;
+}
+#products {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  background-color: white;
-  margin-top: 50px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  flex-wrap: wrap;
+  height: auto;
+  padding: 12px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #bebcbc;
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
+  object-fit: contain;
 }
 
-#about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(to bottom right, #3af00c, #0066cc);
-    opacity: 0.6;
-    z-index: -1;
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-#about h2 {
-    color: #333;
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 30px;
+.card p {
+  margin-bottom: 5px;
+  line-height: 1.5;
 }
 
-#about p {
-    color: #666;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 30px;
+.card button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-
-
-
-#contact {
-  background-color: transparent;
-  padding-top: 90px;
-  padding-bottom: 50px;
-  margin-top: 50px;
+.card button.add-to-cart {
+  background-color: #183d0f;
+  color: white;
 }
 
-#contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
+.card button.add-to-cart:hover {
+  background-color: #2e8b00;
 }
 
-#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
-    width: 300px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-} */
+.card button.delete {
+  background-color: #e3342b;
+  color: white;
+}
+
+.card button.delete:hover {
+  background-color: #c2271e;
+}
+
+.card button.update {
+  margin-left: 10px;
+}
+#form-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#crud-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+#crud-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#crud-container form input[type="text"],
+#crud-container form input[type="number"],
+#crud-container form textarea,
+#crud-container form input[type="file"] {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
