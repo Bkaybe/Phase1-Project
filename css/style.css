@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#landing {
+  background-image: linear-gradient(45deg, transparent, rgba(33, 56, 10, 0.712)),
+    url(/images/landing_image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#header {
+  background-color: transparent;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+#landing div#header #h-logo h2 {
+  padding-left: 10px;
+  color: #3af00c;
+  font-size: 35px;
+}
+
+#h-nav a {
+  color: rgb(252, 252, 252);
+  text-decoration: none;
+  padding: 5px;
+  padding-right: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+#h-nav a:hover {
+  background-color: #3af00c;
+  color: black;
+}
+
+/* hero section/* hero section */
+/* hero section/* hero section */
+
+#hero {
+  height: 100vh;
+  background-color: transparent;
+  padding-top: 90px;
+}
+
+#hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px;
+  row-gap: 20px;
+}
+
+#my-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+}
+
+#my-image img {
+  height: 392px;
+  width: 353px;
+  border-radius: 75% 25% 51% 49% / 47% 17% 83% 53%;
+  border: 5px solid #ffffff;
+  border-style: outset;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-left: 70px;
+}
+
+.intro p {
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 10px;
+}
+
+p#name-b {
+  text-decoration: wavy;
+  font-style: italic;
+  font-weight: bolder;
+  color: #3af00c;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns a {
+  text-decoration: none;
+  padding: 30px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+}
+
+button.hire {
+  background-color: black;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+
+button.hire:hover {
+  background-color: #3af00c;
+  color: black;
+}
+
+button.more-info {
+  background-color: #3af00c;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+button.more-info:hover {
+  background-color: black;
+  color: #ffffff;
+}
