@@ -60,15 +60,73 @@
     <!--End of Home div-->
 
     <!--Projects/Gallery Section-->
-    <section id="products"></section>
+    <section id="products-section">
+        <h2>Products</h2>
+        <div id="crud-container">
+            <h2>Product Management</h2>
+            <div>
+            <form id="product-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <button type="submit" id="create-btn">Create Product</button>
+                <button type="button" id="update-btn" disabled>Update Product</button>
+            </form>
+            </div>
+            <div id="products">
+                <!--Product  will be displayed here -->
+            </div>
+        </div>
+    </section>
     <!--End of Gallery Section-->
 
     <!--About Section-->
-    <section id="about"></section>
+    <section id="about">
+        <div id="about-container">
+          <h2>About Us</h2>
+          <div id="about-text">
+            <p>
+              We are a leading online shopping destination, offering a wide
+              range of products at affordable prices. Our mission is to provide
+              customers with the best shopping experience possible..
+            </p>
+            <p>
+              At Snap Store, we strive to create a welcoming and inclusive environment
+              where everyone feels comfortable and safe to shop. We believe that
+              every customer deserves to have the best shopping experience, so we
+              are committed to providing excellent customer service and providing
+              excellent customer support.
+            </p>
+    </section>
     <!--End Of About Section-->
 
     <!--Contanct Section-->
-    <section id="contact-form"></section>
+    <section id="contact-form">
+        <div id="contact-container">
+          <h2>Contact Us</h2>
+          <form id="contact-form-id">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+    </section>
     <!--End of Contact Section-->
   </body>
 </html>
