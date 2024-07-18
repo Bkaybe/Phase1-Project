@@ -17,7 +17,7 @@ function getProducts() {
   fetch(apiUrl)
     .then(res => res.json())
     .then(data => {
-      // I'll display the first 6 products from the server
+      // I'll display the first 8 products from the server
       data.slice(0, 8).forEach(product => createProductCard(product));
     })
     .catch(error => console.error("Error:", error));
@@ -54,7 +54,7 @@ function createProductCard(product) {
   deleteBtn.classList.add("delete");
   deleteBtn.textContent = "Delete";
   deleteBtn.addEventListener("click", () =>
-    updateProduct(productId, productData)
+  deleteProduct(productId)
   );
   card.appendChild(deleteBtn);
 
