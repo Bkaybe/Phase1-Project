@@ -64,7 +64,7 @@ Follow the steps below to install the program to your computer:
 
 - To run this program you can click on the link below to get to the deployed website
 
-    [Snap Store E-Commerce Hosted Web Link](https://)
+    [Snap Store E-Commerce Hosted Web Link](https://phase1-project-steel.vercel.app/)
 
 - To run it on your local machine you will need to open the folder containing the project in vscode then in your terminal run the following command
     ```console
