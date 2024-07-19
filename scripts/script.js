@@ -13,6 +13,7 @@ function createElement(element) {
   return document.createElement(element);
 }
 
+// Adding scroll event listener
 document.addEventListener("scroll", () => {
   const header = select("#header");
 
@@ -28,7 +29,7 @@ function getProducts() {
     .then((res) => res.json())
     .then((data) => {
       // I'll display the first 8 products from the server
-      data.slice(0, 8).forEach((product) => createProductCard(product));
+      data.slice(-8).forEach((product) => createProductCard(product));
     })
     .catch((error) => console.error("Error:", error));
 }
@@ -75,6 +76,7 @@ function createProductCard(product) {
   productContainer.appendChild(card);
 }
 
+// function with an event listener of click on the add to cart button to simulate actual adding to cart
 function addToCart(product) {
   // Simulating adding to cart
   alert(`Added ${product.title} to cart`);
@@ -92,6 +94,25 @@ function createProduct(productData) {
     .then((newProduct) => console.log("Product created:", newProduct))
     .catch((error) => console.error("Error creating product:", error));
 }
+
+// Adding submit event listener for the form
+const form = select("#product-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const productData = {
+    title: form.title.value,
+    price: parseFloat(form.price.value),
+    category: form.category.value,
+    image: form.image.value,
+  };
+
+  createProduct(productData);
+  alert("Element Added");
+
+  form.reset();
+});
 
 function getProduct(productId) {
   return fetch(`${apiUrl}/${productId}`)
