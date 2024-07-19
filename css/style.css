@@ -12,16 +12,20 @@
   height: 100vh;
 }
 #header {
-  background-color: transparent;
   height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: none;
   position: sticky;
   top: 0;
+  background-color: black;
+}
+#header.scrolled {
+  background-color: #183d0f;
 }
 
-#landing div#header #h-logo h2 {
+div#header #h-logo h2 {
   padding-left: 10px;
   color: #3af00c;
   font-size: 35px;
@@ -114,13 +118,13 @@ button {
   padding: 10px;
 }
 
-button.hire {
+button.products {
   background-color: black;
   color: whitesmoke;
   border-radius: 5px;
 }
 
-button.hire:hover {
+button.products:hover {
   background-color: #3af00c;
   color: black;
 }
