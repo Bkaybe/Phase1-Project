@@ -112,6 +112,7 @@ form.addEventListener("submit", (e) => {
   alert("Element Added");
 
   form.reset();
+  location.reload();
 });
 
 function getProduct(productId) {
